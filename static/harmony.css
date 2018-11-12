@@ -1,0 +1,33 @@
+h3{
+color:maroon;
+text-align: center;
+font-size: 60px;
+font-family: Arial Unicode;
+background-image: url("piano-1655558_1920.jpg");
+height :80vh;
+
+}
+h1{
+color:brown;
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+body {
+    background-color: linen;
+}
+h4{
+	color: brown;
+	font-size: 20px;
+}
+div {
+    border: 1px solid black;
+    text-align: justify;
+}
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}

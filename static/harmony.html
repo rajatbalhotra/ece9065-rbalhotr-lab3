@@ -1,0 +1,124 @@
+﻿   <head>
+   <title>SE 3316 - Lab 2</title>
+   <meta charset="UTF-8">
+<script type='text/javascript' src='harmony.js'></script>
+<link rel="stylesheet" href="harmony.css">
+   </head>
+ <body>
+ <div>Password <input type="text" id="password">
+ <button onclick="Enable();">Login</button></div>
+ <div>
+ <input type="radio" name="imgsel" checked="checked" id="english" /> English
+ <input type="radio" name="imgsel" onclick="change();" id="french" /> French
+ </div>
+ <br>
+ 
+ <h3>HARMONY</h3>
+ <h4>Pick your instrument :</h4>
+<div>
+<a href="music/drums.jpg"><img src="music/drums.jpg" alt="Drums" title="Drums" style="width:128px;height:128px;"/></a>
+<label class="eng"> Drums</label><label class="fre" style="display:none;"> Tambours </label> Price : $749
+ <select><option value="13%">13%</option>
+<option value="0%">0%</option>
+ </select>
+ Available Quantity: <input type="number" class='show' id='abq' disabled value="5"></input><br />
+ <input type="number" id='ab' value="1"></input>
+ <button class="add-btn" id="button1" onclick="addItem('Drums',749,13,document.getElementById('ab').value)">Add</button>
+</div>
+<div>
+<a href="music/flute.jpg"><img src="music/flute.jpg" alt="Flute" title="Flute" style="width:128px;height:128px;"/></a>
+<label class="eng"> Flute</label><label class="fre" style="display:none;"> Flûte </label> Price : $1416
+<select><option value="13%">13%</option>
+<option value="0%">0%</option>
+ </select>
+ Available Quantity: <input type="number" class='show' id='bcq' disabled value="5"></input><br />
+ <input type="number" id='bc' value="1"></input>
+ <button class="add-btn" id="button2" onclick="addItem('Flute',1416,13,document.getElementById('bc').value)" >Add</button>
+ </div>
+ <div>
+<a href="music/guitar.jpg"><img src="music/guitar.jpg" alt="Guitar" title="Guitar" style="width:128px;height:128px;"/></a>
+<label class="eng"> Guitar</label><label class="fre" style="display:none;"> Guitare </label> Price : $340
+<select><option value="13%">13%</option>
+<option value="0%">0%</option>
+ </select>
+ Available Quantity: <input type="number" class='show' id='cdq' disabled value="5"></input><br />
+ <input type="number" id='cd' value="1"></input>
+ <button class="add-btn" id="button3" onclick="addItem('Guitar',340,13,document.getElementById('cd').value)" >Add</button>
+ </div>
+ <div>
+<a href="music/Harmonium.jpg"><img src="music/Harmonium.jpg" alt="Harmonium" title="Harmonium" style="width:128px;height:128px;"/></a>
+<label class="eng"> Harmonium</label><label class="fre" style="display:none;"> Harmonium </label> Price : $150
+<select><option value="13%">13%</option>
+<option value="0%">0%</option>
+ </select>
+ Available Quantity: <input type="number" class='show' id='deq' disabled value= "5"></input><br />
+ <input type="number" id='de' value="1"></input>
+ <button class="add-btn" id="button4" onclick="addItem('Harmonium',150,13,document.getElementById('de').value)" >Add</button>
+ </div>
+ <div>
+<a href="music/melodeon.jpg"><img src="music/melodeon.jpg" alt="Melodeon" title="Melodeon" style="width:128px;height:128px;"/></a>
+<label class="eng"> Melodeon</label><label class="fre" style="display:none;"> Mélodéon </label> Price : $773
+<select><option value="13%">13%</option>
+<option value="0%">0%</option>
+ </select>
+ Available Quantity: <input type="number" class='show' id='efq' disabled value="5"></input><br />
+ <input type="number" id='ef' value="1"></input>
+ <button class="add-btn" id="button5" onclick="addItem('Melodeon',773,13,document.getElementById('ef').value)" >Add</button>
+ </div>
+ <div>
+<a href="music/piano.jpg"><img src="music/piano.jpg" alt="Piano" title="Piano" style="width:128px;height:128px;"/></a>
+<label class="eng"> Piano</label><label class="fre" style="display:none;"> Piano </label> Price : $49995
+<select><option value="13%">13%</option>
+<option value="0%">0%</option>
+ </select>
+ Available Quantity: <input type="number" class='show' id='fgq' disabled value="5"></input><br />
+ <input type="number" id='fg' value="1"></input>
+ <button class="add-btn" id="button6" onclick="addItem('Piano',49995,13,document.getElementById('fg').value)" >Add</button>
+</div>
+<div>
+<a href="music/Saxophone.jpg"><img src="music/Saxophone.jpg" alt="Saxophone" title="Saxophone" style="width:128px;height:128px;"/></a>
+<label class="eng"> Saxophone</label><label class="fre" style="display:none;"> Saxophone </label> Price : $1603
+<select><option value="13%">13%</option>
+<option value="0%">0%</option>
+ </select>
+ Available Quantity: <input type="number" class='show' id='ghq' disabled value="5"></input><br />
+ <input type="number" id='gh' value="1"></input>
+ <button class="add-btn" id="button7" onclick="addItem('Saxophone',1603,13,document.getElementById('gh').value)" >Add</button>
+ </div>
+ <div>
+<a href="music/tabla.jpg"><img src="music/tabla.jpg" alt="Tabla" title="Tabla" style="width:128px;height:128px;"/></a>
+<label class="eng"> Tabla</label><label class="fre" style="display:none;"> Tableau </label> Price : $179
+<select><option value="13%">13%</option>
+<option value="0%">0%</option>
+ </select>
+ Available Quantity: <input type="number" class='show' id='hiq' disabled value="5"></input><br />
+ <input type="number" id='hi' value="1"></input>
+<button class="add-btn" id="button8" onclick="addItem('Tabla',179,13,document.getElementById('hi').value)" >Add</button>
+ </div>
+ <div>
+<a href="music/trumpet.jpg"><img src="music/trumpet.jpg" alt="Trumpet" title="Trumpet" style="width:128px;height:128px;"/></a>
+<label class="eng"> Trumpet</label><label class="fre" style="display:none;"> Trompette </label> Price : $399
+<select><option value="13%">13%</option>
+<option value="0%">0%</option>
+ </select>
+ Available Quantity: <input type="number" class='show' id='ijq' disabled value="5"></input><br />
+ <input type="number" id='ij' value="1"></input>
+ <button class="add-btn" id="button9" onclick="addItem('Trumpet',399,13,document.getElementById('ij').value)" >Add</button>
+ </div>
+ <div>
+<a href="music/violin.jpg"><img src="music/violin.jpg" alt="Violin" title="Violin" style="width:128px;height:128px;"/></a>
+<label class="eng"> Violin</label><label class="fre" style="display:none;"> Violon </label> Price : $420
+<select><option value="13%">13%</option>
+<option value="0%">0%</option>
+ </select>
+ Available Quantity: <input type="number" class='show' id='jkq' disabled value="5"></input><br />
+ <input type="number" id='jk' value="1"></input>
+ <button class="add-btn" id="button10" onclick="addItem('Violin',420,13,document.getElementById('jk').value)" >Add</button>
+ </div>
+ <h1>Shopping Basket</h1>
+ <div>
+ <div id='myDiv'></div>
+ </div>
+ <button onclick="InstrumentPurchased();">Buy</button>
+</body>
+</html>
