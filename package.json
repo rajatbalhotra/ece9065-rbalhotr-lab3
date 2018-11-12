@@ -1,0 +1,24 @@
+{
+  "name": "ece9065-rbalhotr-lab3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajatbalhotra/ece9065-rbalhotr-lab3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajatbalhotra/ece9065-rbalhotr-lab3/issues"
+  },
+  "homepage": "https://github.com/rajatbalhotra/ece9065-rbalhotr-lab3#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.11"
+  }
+}
